@@ -1,0 +1,28 @@
+:root{
+    --mainColor: rgb(106, 131, 211);
+    --mainColorMid: rgba(106, 130, 211, 0.5);
+    --mainColorLight: rgba(106, 130, 211, 0.3);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: monospace;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+a,a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+
+.pageTitle{
+    text-align: center;
+    background: var(--mainColor);
+    color: #fff;
+    font-size: 28px;
+    letter-spacing: 5px;
+    padding: 10px 0;
+    text-transform: uppercase;
+}

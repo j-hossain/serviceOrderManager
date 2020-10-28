@@ -1,0 +1,24 @@
+.optionBox{
+    position: relative;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
+    width: 80%;
+    max-width: 500px;
+    padding: 30px;
+    text-align: center;
+    border: 2px double var(--mainColorMid);
+    border-radius: 25px;
+}
+
+.optionBox .option{
+    padding: 10px 0;
+    margin: 20px auto;
+    font-size: 18px;
+    width: 95%;
+    background: var(--mainColor);
+    border-radius: 25px;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
