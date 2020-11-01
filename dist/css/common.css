@@ -17,7 +17,7 @@ a,a:hover{
     color: inherit;
 }
 
-.pageTitle{
+.navBar{
     text-align: center;
     background: var(--mainColor);
     color: #fff;
@@ -25,4 +25,9 @@ a,a:hover{
     letter-spacing: 5px;
     padding: 10px 0;
     text-transform: uppercase;
+}
+
+.navBar .homeBtn{
+    cursor: pointer;
+    user-select: none;
 }
