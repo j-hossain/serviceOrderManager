@@ -1,24 +1,129 @@
-.serviceDetails{
+.inputDiv{
     margin: 30px auto;
     width: 80%;
     max-width: 500px;
     padding: 30px;
     text-align: center;
-    border-radius: 25px;
+    border-radius: 15px;
+}
+
+.inputDiv.serviceDetails{
     background: var(--mainColorLight);
+    color: var(--mainColor);
+}
+
+.inputDiv.eleBody{
+    background: var(--bodyColorLight);
+    color: var(--bodyColor);
+}
+
+.inputDiv.eleLens{
+    background: var(--lensColorLight);
+    color: var(--lensColor);
+}
+
+.inputDiv.eleFlash{
+    background: var(--flashColorLight);
+    color: var(--flashColor);
 }
 
 #newOrderForm input,
 #newOrderForm textarea{
-    padding: 5px 5px;
+    padding: 10px 10px;
     margin: 10px auto;
-    width: 95%;
+    font-size: 16px;
+    width: 100%;
+    color: #777;
     border: none;
     border-radius: 7px;
-    color:  #777;
+}
+
+#newOrderForm input:focus,
+#newOrderForm textarea:focus{
+    outline: none;
+}
+
+#newOrderForm input::placeholder,
+#newOrderForm textarea::placeholder{
+    color: #999;
     text-transform: capitalize;
 }
 
-#newOrderForm input:focus{
-    outline: none;
+.delDate{
+    width: 100%;
+    margin: 10px auto;
+    padding-top: 10px;
+    background: #fff;
+    border-radius: 7px;
+}
+
+.delDate input{
+    background: none;
+    margin: 0;
+}
+
+.addButtons{
+    width: 80%;
+    max-width: 350px;
+    margin: 10px auto;
+    text-align: center;
+    background: linear-gradient(to top,#efefef, #dedede);
+    border-radius: 50%;
+    padding-bottom: 20px;
+}
+
+.addButtons .addBtn{
+    color: #fff;
+    font-size: 18px;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    user-select: none;
+}
+
+.addButtons .addBtn#body{
+    background-color: var(--bodyColor);
+}
+
+.addButtons .addBtn#lens{
+    background-color: var(--lensColor);
+}
+
+.addButtons .addBtn#flash{
+    background-color: var(--flashColor);
+}
+
+/* styling the counter */
+.counter{
+    display: grid;
+    grid-template-columns: 40% 20% 20% 20%;
+    align-items: center;
+}
+
+.counter .counterTitle{
+    font-weight: bold;
+}
+
+.counter .cntBtn span{
+    margin: 0 5px ;
+    padding: 5px 7px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.checkDiv{
+    display: grid;
+    grid-template-columns: 40% 12% 12% 12% 12%;
+    align-items: center;
+}
+
+.checkDiv .checkTitle{
+    /* flex-basis: 650px; */
+}
+
+.checkDiv input{
+    margin: 0;
+    padding: 0;
 }

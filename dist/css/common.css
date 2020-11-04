@@ -2,12 +2,21 @@
     --mainColor: rgb(106, 131, 211);
     --mainColorMid: rgba(106, 130, 211, 0.5);
     --mainColorLight: rgba(106, 130, 211, 0.3);
+    --bodyColor: rgb(223, 73, 73);
+    --bodyColorMid: rgba(223, 73, 73, 0.5);
+    --bodyColorLight: rgba(223, 73, 73, 0.1);
+    --lensColor:rgb(29, 185, 29);
+    --lensColorMid:rgba(29, 185, 29, 0.5);
+    --lensColorLight:rgba(29, 185, 29, 0.1);
+    --flashColor: rgb(194, 168, 24);
+    --flashColorMid: rgba(194, 169, 24, 0.5);
+    --flashColorLight: rgba(194, 169, 24, 0.1);
 }
 
 *{
     padding: 0;
     margin: 0;
-    font-family: monospace;
+    font-family: sans-serif;
     scroll-behavior: smooth;
     box-sizing: border-box;
 }
