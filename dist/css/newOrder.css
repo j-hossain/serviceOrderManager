@@ -5,6 +5,7 @@
     padding: 30px;
     text-align: center;
     border-radius: 15px;
+    position: relative;
 }
 
 .inputDiv.serviceDetails{
@@ -36,6 +37,7 @@
     color: #777;
     border: none;
     border-radius: 7px;
+    resize: none;
 }
 
 #newOrderForm input:focus,
@@ -49,6 +51,13 @@
     text-transform: capitalize;
 }
 
+.inputDivTitle{
+    font-size: 24px;
+    text-transform: capitalize;
+    display: inline-block;
+    padding-bottom: 20px;
+}
+
 .delDate{
     width: 100%;
     margin: 10px auto;
@@ -60,6 +69,20 @@
 .delDate input{
     background: none;
     margin: 0;
+}
+
+.deleteBtn{
+    font-size: 24px;
+    display: inline-block;
+    border-radius: 50%;
+    padding: 6px 13px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    user-select: none;
 }
 
 .addButtons{
@@ -83,15 +106,15 @@
     user-select: none;
 }
 
-.addButtons .addBtn#body{
+.addButtons .addBtn#bodyBtn{
     background-color: var(--bodyColor);
 }
 
-.addButtons .addBtn#lens{
+.addButtons .addBtn#lensBtn{
     background-color: var(--lensColor);
 }
 
-.addButtons .addBtn#flash{
+.addButtons .addBtn#flashBtn{
     background-color: var(--flashColor);
 }
 
@@ -104,23 +127,35 @@
 
 .counter .counterTitle{
     font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
 }
 
 .counter .cntBtn span{
     margin: 0 5px ;
-    padding: 5px 7px;
-    border: 1px solid #fff;
+    padding: 5px 9px;
     border-radius: 50%;
+    user-select: none;
+    cursor: pointer;
+    background-color: black;
+    color: #fff;
+}
+
+.counter .counterBox{
+    text-align: center;
 }
 
 .checkDiv{
     display: grid;
-    grid-template-columns: 40% 12% 12% 12% 12%;
+    grid-template-columns: 48% 12% 12% 12% 12%;
     align-items: center;
 }
 
 .checkDiv .checkTitle{
     /* flex-basis: 650px; */
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
 }
 
 .checkDiv input{

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,69 +8,15 @@
     <link rel="stylesheet" href="dist/css/homepage.css">
     <link rel="stylesheet" href="dist/css/newOrder.css">
     <title>HomePage</title>
-</head> 
+</head>
+
 <body>
     <div class="navBar">
         <span class="homeBtn" onclick="homePage()">Home</span>
     </div>
     <div id="contentBody">
+        <!-- for every pageonly the elementsinside this div will be changed -->
         <!-- keeping seperate forms to reduce complexity of input names -->
-        <div id="newOrderForm">
-            <form class="inputDiv serviceDetails">
-                <input type="text" name="cName" placeholder="Customer Name">
-                <input type="tel" name="cPhone" placeholder="Phone Number">
-                <input type="text" name="cAddress" placeholder="Address">
-                <textarea name="problemDet" id="problem"  placeholder="Problem Details"></textarea>
-                <div class="delDate">
-                    <label for="dDate">Delivery Date</label>
-                    <input type="date" name="dDate" placeholder="Delivery Date">
-                </div>
-                <input type="number" name="mnCost" placeholder="minimum cost">
-                <input type="number" name="mxCost" placeholder="maximum cost">
-                <input type="number" name="advPaid" placeholder="Advance Payment">
-            </form>
-            <div class="elements">
-                <form class="inputDiv eleBody" id="body01">
-                    <input type="text" name="brand" placeholder="Camera Brand">
-                    <input type="text" name="model" placeholder="Camera Model">
-                    <input type="text" name="identityNo" placeholder="Identity No.">
-                    <div class="counter">
-                        <span class="counterTitle">Battery</span>
-                        <div onclick="counterDecrease(this)" class="cntBtn decrease"><span><</span></div>
-                        <input type="number" name="battery" class="counterBox">
-                        <div onclick="counterIncrease(this)" class="cntBtn increase"><span>></span></div>
-                    </div>
-                    <div class="counter">
-                        <span class="counterTitle">Body Cap</span>
-                        <div onclick="counterDecrease(this)" class="cntBtn decrease"><span><</span></div>
-                        <input type="number" name="cap" class="counterBox">
-                        <div onclick="counterIncrease(this)" class="cntBtn increase"><span>></span></div>
-                    </div>
-                    <div class="counter">
-                        <span class="counterTitle">Memory Card</span>
-                        <div onclick="counterDecrease(this)" class="cntBtn decrease"><span><</span></div>
-                        <input type="number" name="memoryCard" class="counterBox">
-                        <div onclick="counterIncrease(this)" class="cntBtn increase"><span>></span></div>
-                    </div>
-                    <div class="checkDiv">
-                        <span class="checkTitle">Charger</span>
-                        <input type="radio" name="charger" value="yes" > <span>Yes</span>
-                        <input type="radio" name="charger" value="no"><span>No</span>
-                    </div>
-                </form>
-                <form class="inputDiv eleLens" id="lens01">
-                    <input type="text" name="" id="" placeholder="Lens Brand">
-                </form>
-                <form class="inputDiv eleFlash" id="flash01">
-                    <input type="text" name="" id="" placeholder="Flash Brand">
-                </form>
-            </div>
-            <div class="addButtons">
-                <span class="addBtn" id="lens">Lens</span>
-                <span class="addBtn" id="flash">Flash</span>
-                <span class="addBtn" id="body">Body</span>
-            </div>
-        </div>
         
     </div>
     <script src="dist/js/common.js"></script>
