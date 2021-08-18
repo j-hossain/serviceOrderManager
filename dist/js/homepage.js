@@ -1,4 +1,4 @@
-//homePage();
+// homePage();
 
 function homePage(){
     var body = cleanBody();

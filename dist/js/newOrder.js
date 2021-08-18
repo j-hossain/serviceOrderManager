@@ -1,4 +1,4 @@
-newOrder();
+// newOrder();
 var body;
 var mainDiv;
 var elementsDiv;
@@ -153,14 +153,6 @@ function createCounterInput(title,name){
 
     div.append(counterTitle,decDiv,counter,incDiv);
     return div;
-}
-
-function createInput(type, name, placeholder) {
-    var inputBox = document.createElement('input');
-    inputBox.type = type;
-    inputBox.name = name;
-    inputBox.placeholder = placeholder;
-    return inputBox;
 }
 
 function createAddButtons(){
